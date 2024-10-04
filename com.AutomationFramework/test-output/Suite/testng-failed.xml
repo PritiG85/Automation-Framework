@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Chrome(failed)">
+    <parameter name="usn" value="admin"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="pwd" value="manager"/>
+    <parameter name="url" value="http://desktop-t1ogao3/login.do"/>
+    <classes>
+      <class name="TestNGExecution.Parameterization">
+        <methods>
+          <include name="validLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestNGExecution.Parameterization -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+  <test thread-count="5" name="firefox(failed)">
+    <parameter name="usn" value="admin"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="pwd" value="manager"/>
+    <parameter name="url" value="http://desktop-t1ogao3/login.do"/>
+    <classes>
+      <class name="TestNGExecution.Parameterization">
+        <methods>
+          <include name="validLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestNGExecution.Parameterization -->
+    </classes>
+  </test> <!-- firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
